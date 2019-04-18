@@ -11,6 +11,8 @@ This version should have the following functionality:
   
 Resources: 
   - https://astaxie.gitbooks.io/build-web-application-with-golang/en/04.5.html
+  - https://jonathanmh.com/tracing-preventing-http-redirects-golang/
+
   
 
 
