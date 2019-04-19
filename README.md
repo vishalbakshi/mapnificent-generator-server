@@ -13,15 +13,22 @@ If you would like to run this locally, make sure you have go installed (https://
   1. Clone this repo
   2. Add a `bin` folder
   3. Set your $GOPATH to the root directory
-  4. build the packages, `cd` into `src/server` and `go install`
-  5. When you run the server, it will download the `gtfs.zip` file from the transitfeeds API and convert it to `bayarea.bin`
+  4. 'cd' to `mapnificentGenerator` and `go build`
+  5. `go get github.com/golang/protobuf/proto`
+  6. `go get github.com/mapnificent/gogtfs`
+  7. `go get github.com/mapnificent/mapnificent_generator/mapnificent.pb`
+  8. `cd` to `src/server` and `go install
+  9. Enter `export PATH=$PATH:$(go env GOPATH)/bin`
+  10. Enter `server`
+  11. When you run the server, it will download the `gtfs.zip` file from the transitfeeds API and convert it to `bayarea.bin`, both in the folder `server`
   
 To test your .bin file in Mapnificent:
 
-  1. In the `_cities/bayarea` folder, delete the file `bayarea.bin` and replace it with your new `bayarea.bin`
+  1. Get it up and running by following <a href="https://github.com/mapnificent/mapnificent/blob/master/README.md" their instructions</a> 
+  2. Then, in the `_cities/bayarea` folder, delete the file `bayarea.bin` and replace it with your new `bayarea.bin`
   2. In the command line enter `bower install`
   3. Enter `jeyll serve -w`
-  4. Go to `localhost://4000`, click on `Bay Area` and see if it correctly maps your data
+  4. Go to `localhost://4000` in a browser, click on the `Bay Area` button and see if it correctly maps your data
   5. If it doesn't, post an issue here
   
 Resources: 
