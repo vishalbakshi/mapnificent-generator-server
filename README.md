@@ -2,12 +2,25 @@
 A Go server that runs the Mapnificent Generator script to prepare GTFS binary files
 
 ## Version 2
-This version should have the following functionality:
+This version has the following (untested) functionality:
 
-  - [ ] Retrieve zip file from transitfeeds API
-  - [ ] Save the zip file to local memory
-  - [ ] Generate .bin file from zip file using `mapnificent.go`
+  - [x] Retrieve zip file from transitfeeds API
+  - [x] Save the zip file to local memory
+  - [x] Generate .bin file from zip file using `mapnificent.go`
+
+  1. Clone this repo
+  2. Add a `bin` folder
+  3. Set your $GOPATH to the root directory
+  4. build the packages and install `src/server`
+  5. The server will download the `gtfs.zip` file from the transitfeeds API and convert it to `bayarea.bin`
   
+To test your .bin file in Mapnificent:
+
+  1. In the `_cities/bayarea` folder, delete the file `bayarea.bin` and replace it with your new `bayarea.bin`
+  2. In the command line enter `bower install`
+  3. Enter `jeyll serve -w`
+  4. Go to `localhost://4000`, click on `Bay Area` and see if it correctly maps your data
+  5. If it doesn't, post an issue here
   
 Resources: 
   - https://astaxie.gitbooks.io/build-web-application-with-golang/en/04.5.html
