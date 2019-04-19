@@ -8,6 +8,8 @@ This version has the following (untested) functionality:
   - [x] Save the zip file to local memory
   - [x] Generate .bin file from zip file using `mapnificent.go`
 
+If you would like to run this locally, make sure you have go installed (https://golang.org/dl/)
+
   1. Clone this repo
   2. Add a `bin` folder
   3. Set your $GOPATH to the root directory
