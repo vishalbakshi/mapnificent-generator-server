@@ -13,8 +13,8 @@ If you would like to run this locally, make sure you have go installed (https://
   1. Clone this repo
   2. Add a `bin` folder
   3. Set your $GOPATH to the root directory
-  4. build the packages and install `src/server`
-  5. The server will download the `gtfs.zip` file from the transitfeeds API and convert it to `bayarea.bin`
+  4. build the packages, `cd` into `src/server` and `go install`
+  5. When you run the server, it will download the `gtfs.zip` file from the transitfeeds API and convert it to `bayarea.bin`
   
 To test your .bin file in Mapnificent:
 
