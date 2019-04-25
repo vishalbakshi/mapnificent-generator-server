@@ -24,7 +24,7 @@ If you would like to run this locally, make sure you have go installed (https://
   
 To test your .bin file in Mapnificent:
 
-  1. Get it up and running by following <a href="https://github.com/mapnificent/mapnificent/blob/master/README.md" their instructions</a> 
+  1. Get it up and running by following <a href="https://github.com/mapnificent/mapnificent/blob/master/README.md"> their instructions</a> 
   2. Then, in the `_cities/bayarea` folder, delete the file `bayarea.bin` and replace it with your new `bayarea.bin`
   2. In the command line enter `bower install`
   3. Enter `jeyll serve -w`
