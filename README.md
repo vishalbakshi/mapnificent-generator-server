@@ -17,7 +17,7 @@ If you would like to run this locally, make sure you have go installed (https://
   5. `go get github.com/golang/protobuf/proto`
   6. `go get github.com/mapnificent/gogtfs`
   7. `go get github.com/mapnificent/mapnificent_generator/mapnificent.pb`
-  8. `cd` to `src/server` and `go install
+  8. `cd` to `src/server` and `go install`
   9. Enter `export PATH=$PATH:$(go env GOPATH)/bin`
   10. Enter `server`
   11. When you run the server, it will download the `gtfs.zip` file from the transitfeeds API and convert it to `bayarea.bin`, both in the folder `server`
