@@ -13,10 +13,10 @@ If you would like to run this locally, make sure you have go installed (https://
   1. Clone this repo
   2. Add a `bin` folder
   3. Set your `GOPATH` to the root directory
-  4. `cd` to `mapnificentGenerator` and `go build`
-  5. `go get github.com/golang/protobuf/proto`
-  6. `go get github.com/mapnificent/gogtfs`
-  7. `go get github.com/mapnificent/mapnificent_generator/mapnificent.pb`
+  4. `go get github.com/golang/protobuf/proto`
+  5. `go get github.com/mapnificent/gogtfs`
+  6. `go get github.com/mapnificent/mapnificent_generator/mapnificent.pb`
+  7. `cd` to `mapnificentGenerator` and `go build`
   8. `cd` to `src/server` and `go install`
   9. Enter `export PATH=$PATH:$(go env GOPATH)/bin`
   10. Enter `server`
